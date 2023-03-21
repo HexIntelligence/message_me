@@ -4,4 +4,6 @@ Rails.application.routes.draw do
   root 'chatroom#index'
    get 'login', to: 'sessions#new'
    get 'bob', to: 'chatroom#ebby'
+   post 'login', to: 'sessions#create'
+   delete 'logout', to: 'sessions#destroy'
 end
