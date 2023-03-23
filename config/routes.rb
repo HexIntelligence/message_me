@@ -6,4 +6,5 @@ Rails.application.routes.draw do
    get 'bob', to: 'chatroom#ebby'
    post 'login', to: 'sessions#create'
    delete 'logout', to: 'sessions#destroy'
+   post 'message', to: 'messages#create'
 end
